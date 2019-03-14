@@ -11,13 +11,20 @@
     "redux": "^4.0.1",
     "redux-logger": "^3.0.6",
     "redux-saga": "^1.0.2",
-    "redux-thunk": "^2.3.0"
+    "redux-thunk": "^2.3.0",
+    "tape": "^4.10.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
+  },
+  "babel": {
+    "presets": "react-app",
+    "plugins": [
+      ["@babel/plugin-proposal-decorators", {"legacy": true}]
+    ]
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -29,6 +36,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "@babel/plugin-proposal-decorators": "^7.3.0",
     "redux-devtools-extension": "^2.13.8"
   }
 }

@@ -1,12 +1,12 @@
-import { INCREMENT, DECREMENT } from '../constant/counter'
+import { INCREMENT, DECREMENT } from '../constant'
 
-export default (state = 0, actions) => {
+export default function (store = 0, actions ) {
   switch (actions.type) {
     case INCREMENT:
-      return state + actions.payment
+      return store + 1
     case DECREMENT:
-      return state - actions.payment
+      return store - 1
     default:
-      return state
+      return store
   }
 }
