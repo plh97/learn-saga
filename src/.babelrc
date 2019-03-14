@@ -1,0 +1,18 @@
+{
+  "env": {
+    "test": {
+      "presets":["@babel/preset-env"],
+      "plugins": [
+        [
+          "@babel/plugin-transform-react-jsx",
+          {
+            "pragma": "Nerv.createElement"
+          }
+        ],
+        "@babel/plugin-proposal-object-rest-spread",
+        "@babel/plugin-proposal-class-properties",
+        ["@babel/plugin-proposal-decorators", {"legacy": true}]
+      ]
+    }
+  }
+}
