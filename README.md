@@ -31,3 +31,10 @@
 > git add . <ga .> # to add the confilg file, absolutely not <git commit>, with <git rebase --abort> also can recall before operation.
 > git rebase --continue <grbc>
 > ```
+
+> ###### `git push -f`
+> A very dangerout operation, This command can overwirte other person's commit.
+>
+> Avoid to use this command
+>
+> The reason of this command's appearence is that your commit history is conflict with origin commit history, one need to be overwrited.
