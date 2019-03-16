@@ -1,6 +1,7 @@
 {
   "name": "saga",
-  "version": "0.1.31",
+  "version": "0.1.5",
+  "author": "pengliheng111@gmail.com",
   "private": true,
   "dependencies": {
     "@svgr/webpack": "4.1.0",
@@ -61,7 +62,8 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js"
+    "test": "node scripts/test.js",
+    "wish": "node wish-rebase-branch-success.js"
   },
   "eslintConfig": {
     "extends": "react-app"
