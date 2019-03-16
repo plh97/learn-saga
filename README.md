@@ -1,9 +1,9 @@
-##### feature: 实现功能
+##### Feature: 实现功能
 - [x] redux
 - [x] redux-react
 - [ ] redux-saga
 
-##### test: 添加测试
+##### Test: 添加测试
 - [ ] react-component
 - [ ] react-container
 - [ ] reducer
@@ -21,4 +21,4 @@
 
 
 ##### Tips
-- [ ] if you want to `Custom Some Development` yourself config about `create-react-app`, pls use `yarn eject`
+- [ ] if you want to `Custom Some Development` with your config about `create-react-app`, pls use `yarn eject`.
