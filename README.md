@@ -31,10 +31,42 @@
 > git add . <ga .> # to add the confilg file, absolutely not <git commit>, with <git rebase --abort> also can recall before operation.
 > git rebase --continue <grbc>
 > ```
+> ###### command example
+> ```bash
+> ❯ grbm   
+> 首先，回退头指针以便在其上重放您的工作...
+> 应用：fix/conflict with repeat babel config
+> 使用索引来重建一个（三方合并的）基础目录树...
+> M       package.json
+> 回落到基础版本上打补丁及进行三方合并...
+>自动合并 package.json
+>冲突（内容）：合并冲突于 package.json
+>error: 无法合并变更。
+>打补丁失败于 0001 fix/conflict with repeat babel config
+>提示：用 'git am --show-current-patch' 命令查看失败的补丁
+>Resolve all conflicts manually, mark them as resolved with
+>"git add/rm <conflicted_files>", then run "git rebase --continue".
+>You can instead skip this commit: run "git rebase --skip".
+>To abort and get back to the state before "git rebase", run "git rebase --abort".
+> ```
+
 
 > ###### `git push -f`
 > A very dangerout operation, This command can overwirte other person's commit.
 >
-> Avoid to use this command
+> Avoid to use this command!!! This command can only do in your branch, because this can overwrite other conflict commit, very dangerous!!!
 >
 > The reason of this command's appearence is that your commit history is conflict with origin commit history, one need to be overwrited.
+> ###### command example
+> ```bash
+>❯ git push
+>To https://github.com/pengliheng/learn-saga
+> ! [rejected]        fix/babelrc-conflict-package.json -> fix/babelrc-conflict-package.json (non-fast-forward)
+> error: 推送一些引用到 'https://github.com/pengliheng/learn-saga' 失败
+> 提示：更新被拒绝，因为您当前分支的最新提交落后于其对应的远程分支。
+> 提示：再次推送前，先与远程变更合并（如 'git pull ...'）。详见
+>提示：'git push --help' 中的 'Note about fast-forwards' 小节。
+> ```
+
+> ###### change file without commit
+> absolutely, you can directly create a new branch, and then comit.
