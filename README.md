@@ -20,4 +20,14 @@
 >   不断循环,直到`{done:true}`,也就是说 caller 决定了,什么时候执行完,什么时候恢复执行,可以认为`co.js`就是一个函数自动执行器,`effect`就是一个普通对象,里面包含一些指令
 
 ##### Tips
-- [ ] if you want to `Custom Some Development` with your config about `create-react-app`, pls use `yarn eject`.
+> ###### `yarn eject`
+> if you want to `Custom Some Development` with your config about `create-react-app`, pls use `yarn eject`.
+
+> ###### `git rebase`
+> while you use `git rebase` to update your branch base on master branch, there maybe some conflict with master and your new branch , you need to do with the following operation
+> ```bash
+> git rebase master <grbm> <on git:your branch>
+> # do something to fix the conflict files
+> git add . <ga .> # to add the confilg file, absolutely not <git commit>, with <git rebase --abort> also can recall before operation.
+> git rebase --continue <grbc>
+> ```
