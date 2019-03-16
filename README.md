@@ -1,9 +1,9 @@
-##### feature: 实现功能
+##### Feature: 实现功能
 - [x] redux
 - [x] redux-react
 - [ ] redux-saga
 
-##### test: 添加测试
+##### Test: 添加测试
 - [ ] react-component
 - [ ] react-container
 - [ ] reducer
@@ -19,6 +19,5 @@
 > ##### Effect
 >   不断循环,直到`{done:true}`,也就是说 caller 决定了,什么时候执行完,什么时候恢复执行,可以认为`co.js`就是一个函数自动执行器,`effect`就是一个普通对象,里面包含一些指令
 
-
 ##### Tips
-- [ ] if you want to `Custom Some Development` yourself config about `create-react-app`, pls use `yarn eject`
+- [ ] if you want to `Custom Some Development` with your config about `create-react-app`, pls use `yarn eject`.
