@@ -11,6 +11,7 @@ import rootSaga from '../sagas'
 // const monitor = window['__SAGA_MONITOR_EXTENSION__']
 
 // const sagaMiddleware = createSagaMiddleware({ sagaMonitor: monitor })
+// need an other commit
 const sagaMiddleware = createSagaMiddleware()
 
 export default createStore(
