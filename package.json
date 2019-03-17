@@ -4,9 +4,9 @@
   "author": "pengliheng111@gmail.com",
   "private": true,
   "dependencies": {
+    "@babel/core": "7.2.2",
     "@svgr/webpack": "4.1.0",
     "axios": "^0.18.0",
-    "@babel/core": "7.2.2",
     "babel-eslint": "9.0.0",
     "babel-jest": "23.6.0",
     "babel-loader": "8.0.5",
@@ -76,7 +76,8 @@
   ],
   "devDependencies": {
     "@babel/plugin-proposal-decorators": "^7.3.0",
-    "redux-devtools-extension": "^2.13.8"
+    "redux-devtools-extension": "^2.13.8",
+    "redux-saga-devtools": "^0.3.0"
   },
   "jest": {
     "collectCoverageFrom": [

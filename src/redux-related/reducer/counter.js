@@ -1,4 +1,4 @@
-import { INCREMENT, DECREMENT } from '../constant'
+import { INCREMENT, DECREMENT } from '../constant/counter'
 
 export default function (store = 0, actions ) {
   switch (actions.type) {
