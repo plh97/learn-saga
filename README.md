@@ -1,14 +1,15 @@
 ##### Feature: 实现功能
 - [x] redux
 - [x] redux-react
-- [ ] redux-saga
+- [x] redux-saga
+- [ ] TypeScript
 
 ##### Test: 添加测试
-- [ ] react-component
-- [ ] react-container
+- [ ] component
+- [ ] container
 - [ ] reducer
 - [ ] redux-saga
-- [ ] utils funtion
+- [ ] utils
 
 ##### Spark: 调研
 - [ ] 移动端 px 尺寸自适应 解决方案
@@ -49,7 +50,6 @@
 >You can instead skip this commit: run "git rebase --skip".
 >To abort and get back to the state before "git rebase", run "git rebase --abort".
 > ```
-
 
 > ###### `git push -f`
 > A very dangerout operation, This command can overwirte other person's commit.
