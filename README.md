@@ -11,6 +11,7 @@
 - [ ] redux-saga
 - [ ] utils
 
+
 ##### Spark: 调研
 - [ ] 移动端 px 尺寸自适应 解决方案
 - [ ] typescript
@@ -70,3 +71,12 @@
 
 > ###### change file without commit
 > absolutely, you can directly create a new branch, and then comit.
+
+> ##### branch/commit name
+> branch name as:
+> Feature/add-test
+> commit name as:
+> Feature: add unit test
+> Feature: add component test
+> Feature: add reducer test
+> Feature: add saga test
