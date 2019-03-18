@@ -2,7 +2,7 @@ import { FETCH_PENDING, FETCH_REJECT, FETCH_RESOLVE } from '../constant/user'
 
 const initialState = {
   httpStatus: FETCH_RESOLVE,
-  res: {},
+  res: [],
 }
 
 export default function (store = initialState, actions ) {
