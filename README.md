@@ -19,9 +19,13 @@
 
 ### Spark: saga
 > ##### Effect,将有副作用的代码全部放到 saga 里面
+>
 > 不断循环,直到`{done:true}`,也就是说 caller 决定了,什么时候执行完,什么时候恢复执行,可以认为`co.js`就是一个函数自动执行器,`effect`就是一个普通对象,里面包含一些指令
+>
 > saga 的测试,2种模式
+>
 > 以输入一个 action,异步输出另一个 action,这就是 saga 函数的输入输出点,这种模式不执行 reducer.
+>
 > `.withReducer()`,通过 mock reducer的形式,对比前后 reducer 的情况,也就是会执行 reducer.
 
 ### Tips
