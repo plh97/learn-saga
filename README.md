@@ -8,8 +8,8 @@
 - [x] component
 - [x] utils function with unit-test
 - [x] redux-saga
-- [ ] reducer
-- [ ] container
+- [x] reducer
+- [x] container
 
 
 ### Spark: 调研
