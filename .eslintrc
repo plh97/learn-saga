@@ -43,7 +43,7 @@
   
       "no-trailing-spaces": ["error", { "ignoreComments": true }],
       "no-case-declarations": "off",
-      "no-console": "off",
+      "no-console": ["error", { "allow": ["warn", "error"] }],
       "curly": ["error", "multi-line"],
       "arrow-parens": ["error", "as-needed"],
   

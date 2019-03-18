@@ -6,8 +6,8 @@ import * as userAction from './redux-related/action/user'
 import { FETCH_PENDING, FETCH_RESOLVE, FETCH_REJECT } from './redux-related/constant/user'
 import './App.css'
 import _ from 'lodash'
-import ErrorHandleComponent from './components/Loading'
 import Loading from './components/Loading'
+import ErrorHandleComponent from './components/ErrorHandleComponent'
 
 const Item = ({ data }) => (
   <div className="itme">
@@ -62,7 +62,7 @@ class App extends Component {
           <button onClick={this.handleFetchUser}>Get Users</button>
           {user.httpStatus === FETCH_PENDING && <Loading />}
           {user.httpStatus === FETCH_RESOLVE &&
-            _.get(user, 'res.data', []).map(item => <Item key={item.id} data={item} />)}
+            _.get(user, 'res', []).map(item => <Item key={item.id} data={item} />)}
           {user.httpStatus === FETCH_REJECT && <ErrorHandleComponent data={user.res} />}
         </div>
       </div>
